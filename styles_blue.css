@@ -1,0 +1,36 @@
+body {
+    /*display: block;
+    overflow-x: hidden; */
+    background-color:#6666FF;
+    color:white;
+}
+
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-brand {
+    font-size:26px;
+}
+
+.btn-group {
+    background-color:white;
+}
+
+.card {
+    width:15rem;
+}
+
+.collapse p {
+    padding: 10px;
+}
+
+#headpiece {
+    width:10rem;
+}
+
+ul {
+    text-align: left;
+    padding: 10px;
+}

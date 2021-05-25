@@ -1,0 +1,27 @@
+body {
+    /*display: block;
+    overflow-x: hidden; */
+    background-color:#F0ABF0;
+}
+
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-brand {
+    font-size:26px;
+}
+
+.collapse p {
+    padding: 10px;
+}
+
+ul {
+    text-align: left;
+    padding: 10px;
+}
+
+.img-fluid {
+    max-width:174px;
+}

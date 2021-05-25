@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles.css" rel="stylesheet">
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            // When mouse starts hovering over variation names in dropdown list, turn text respective colors
+            let lilac = document.querySelector('#lilac');
+            lilac.addEventListener('mouseenter', function() {
+              lilac.style.color="#A060CA";
+            })
+            let bluebird = document.querySelector('#bluebird');
+            bluebird.addEventListener('mouseenter', function() {
+              bluebird.style.color="#4934D1";
+            })
+            let talisman = document.querySelector('#talisman');
+            talisman.addEventListener('mouseenter', function() {
+              talisman.style.color="#51A0BD";
+            })
+            let coppelia = document.querySelector('#coppelia');
+            coppelia.addEventListener('mouseenter', function() {
+              coppelia.style.color="#66FF66";
+            })
+
+            // When mouse stops hovering over variation names in dropdown list, turn text back
+            lilac.addEventListener('mouseleave', function() {
+              lilac.style.color="#292b2c";
+            })
+            bluebird.addEventListener('mouseleave', function() {
+              bluebird.style.color="#292b2c";
+            })
+            talisman.addEventListener('mouseleave', function() {
+              talisman.style.color="#292b2c";
+            })
+            coppelia.addEventListener('mouseleave', function() {
+              coppelia.style.color="#292b2c";
+            })
+          })
+        </script>
+
+        <title>Origins</title>
+    </head>
+    <body>
+
+        <!-- Navigation bar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Homepage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="page_history.html">Origins<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Variations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="page_lilac.html" id="lilac">Lilac Fairy</a>
+                  <a class="dropdown-item" href="page_blue.html" id="bluebird">Bluebird</a>
+                  <a class="dropdown-item" href="page_t.html" id="talisman">Talisman</a>
+                  <a class="dropdown-item" href="page_copp.html" id="coppelia">Coppelia</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Text and pictures explaining history -->
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <h1>Origins of Ballet</h1>
+              <p class="black-text">Ballet originated in Italy in the Renaissance during the 1400s, and Catherine de Medici's marraige into
+              French royalty spread ballet to France for the first time. Louis XIV, the Sun King, loved dance, and he popularized
+              ballet in aristocratic courts. At the time, audience members would join in and participate in the performances at the end
+              of the ballet.</p>
+            </div>
+            <div class="col">
+              <img src="https://www.pbt.org/wp-content/uploads/2016/10/Louis-XIV.jpg" class="card-img-top" alt="The Sun King" style="height:20rem;width:14rem">
+            </div>
+          </div>
+        </div>
+    </body>
+</html>

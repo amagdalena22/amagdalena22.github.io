@@ -1,0 +1,46 @@
+body {
+    /*display: block;
+    overflow-x: hidden; */
+    background-color: lightblue;
+}
+
+.navbar {
+    height: 60px;
+}
+
+.navbar-brand {
+    font-size:26px;
+}
+
+.container {
+    padding:60px;
+    color:#990099;
+}
+
+.black-text {
+    color:black;
+}
+
+.card-body {
+    color: black;
+}
+
+.card-title {
+    font-size:16px;
+}
+
+.card {
+    width:13rem;
+}
+
+#bottom-card-bluebird {
+    padding-top:15px;
+}
+
+#bottom-card-coppelia {
+    padding-top: 20px;
+}
+
+#louis-image {
+    height: 100px;
+}

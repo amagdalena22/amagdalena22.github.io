@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link href="styles_t.css" rel="stylesheet">
+
+        <script>
+          document.addEventListener('DOMContentLoaded', function() {
+            // When mouse starts hovering over variation names in dropdown list, turn text respective colors
+            let lilac = document.querySelector('#lilac');
+            lilac.addEventListener('mouseenter', function() {
+              lilac.style.color="#A060CA";
+            })
+            let bluebird = document.querySelector('#bluebird');
+            bluebird.addEventListener('mouseenter', function() {
+              bluebird.style.color="#4934D1";
+            })
+            let talisman = document.querySelector('#talisman');
+            talisman.addEventListener('mouseenter', function() {
+              talisman.style.color="#51A0BD";
+            })
+            let coppelia = document.querySelector('#coppelia');
+            coppelia.addEventListener('mouseenter', function() {
+              coppelia.style.color="#66FF66";
+            })
+
+            // When mouse stops hovering over variation names in dropdown list, turn text back
+            lilac.addEventListener('mouseleave', function() {
+              lilac.style.color="#292b2c";
+            })
+            bluebird.addEventListener('mouseleave', function() {
+              bluebird.style.color="#292b2c";
+            })
+            talisman.addEventListener('mouseleave', function() {
+              talisman.style.color="#292b2c";
+            })
+            coppelia.addEventListener('mouseleave', function() {
+              coppelia.style.color="#292b2c";
+            })
+
+            // Hide the storyline or costumes when the other button is clicked
+            let storyline = document.querySelector('#storyline');
+            let costumes = document.querySelector('#costumes');
+            document.querySelector('#storyline_toggle').addEventListener('click', function() {
+                costumes.style.display = "none";
+                storyline.style.display = "block";
+            });
+            document.querySelector('#costumes_toggle').addEventListener('click', function() {
+                storyline.style.display = "none";
+                costumes.style.display = "block";
+            });
+
+          })
+        </script>
+
+        <title>Talisman</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand" href="index.html">Homepage</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="page_history.html">Origins<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Variations
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="page_lilac.html" id="lilac">Lilac Fairy</a>
+                  <a class="dropdown-item" href="page_blue.html" id="bluebird">Bluebird</a>
+                  <a class="dropdown-item" href="page_t.html" id="talisman">Talisman</a>
+                  <a class="dropdown-item" href="page_copp.html" id="coppelia">Coppelia</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </nav>
+
+        <!-- Variation info -->
+        <div class="text-center">
+          <div class="container">
+            <div class="row my-5">
+              <div class="col-md-8">
+                <h1>Talisman Variation</h1>
+                <h3>What would you like to learn about this variation?</h3>
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <a href="x" class="btn btn-outline-danger" data-toggle="collapse" data-target="#storyline" id="storyline_toggle">Storyline</a>
+                  <a href="x" class="btn btn-outline-success" data-toggle="collapse" data-target="#costumes" id="costumes_toggle">Costumes</a>
+                </div>
+                <div class="collapse" id="storyline">
+                  <p>Talisman is from a ballet called The Talisman choreographed by Marius Petipa and composed by Riccardo Drigo.
+                  In the ballet, the queen of the heavens Amraviti sends her daughter Ella down to Earth to prove she can resist
+                  mortal love. Ella is given a talisman, and if Ella fails the test by losing the talisman, she will lose her
+                  immortality and will remain with the mortals on Earth. <br> On Earth, Ella meets Noureddin, who falls in
+                  love with her, and when he learns the truth of the talisman, he steals it from her. Ella tries to get the talisman
+                  back but falls in love with Noureddin and chooses to forfeit immortality and stay on Earth with him. <br> This
+                  variation is part of the pas d'action between Noureddin and his fiance in Act II of the ballet.</p>
+                </div>
+                <div class="collapse" id="costumes">
+                  <ul>
+                    <li>The time period of this ballet meant a tutu wasn't worn but instead a dress.</li>
+                    <li>The dress for the variation is usually lightly colored with white, blue, or peach.</li>
+                    <li>This variation is usually done en pointe.</li>
+                    <li>The costume can have a gold cash across the bodice.</li>
+                  </ul>
+                  <img src="https://i.pinimg.com/236x/a5/77/ed/a577eddafd3dea3250fc7174e35ec8da.jpg" class="img-fluid" alt="costume1">
+                  <img src="https://i.pinimg.com/236x/1f/d2/1c/1fd21cd4e9b98da783febd3d820c20ec.jpg" class="img-fluid" alt="costume2">
+                  <img src="https://i.pinimg.com/236x/b8/9e/9a/b89e9a9622ca409933e1b7fa95a7d0b7.jpg" class="img-fluid" alt="costume3">
+                  <img src='https://i.pinimg.com/236x/09/22/84/092284ee2dab083addfe5e734e42b319.jpg' class="img-fluid" alt="costume4">
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <img src="https://i.ytimg.com/vi/w7UYZePFnho/maxresdefault.jpg" class="card-img-top" alt="Talisman">
+                  <div class="card-body">
+                    <a href="https://youtu.be/w7UYZePFnho?t=36" class="btn btn-primary btn-sm">Watch the variation!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
